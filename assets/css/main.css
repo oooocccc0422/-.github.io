@@ -2409,6 +2409,7 @@ input, select, textarea {
 	}
 
 /* Nav */
+	
 
 	#nav {
 		position: absolute;
@@ -2482,6 +2483,24 @@ input, select, textarea {
 					display: none;
 				}
 
+
+				#nav a{
+					color: #FFF;
+				
+				}
+
+				#nav a:hover{
+					transform: scale(1.1); 
+					transition: .5s;
+					
+					color: #f8ffa2
+				}
+
+				/*@keyframes hover{
+					0% {color: #ffffff}
+    				100% {color: #f8ffa2}
+				}
+*/
 	.dropotron {
 		background: rgba(255, 255, 255, 0.975);
 		padding: 1em 1.25em 1em 1.25em;
@@ -2534,6 +2553,24 @@ input, select, textarea {
 				border-left: solid 0.75em rgba(64, 64, 64, 0);
 				border-right: solid 0.75em rgba(64, 64, 64, 0);
 			}
+/*img-s*/
+.row {
+		overflow:hidden;
+		}
+
+.row img{
+		transform:scale(1,1);
+		transition: all 0.3s ease-out;
+		}
+
+
+.row img:hover{
+
+		transform:scale(1.15,1.15);
+		}
+
+
+
 
 /* Banner */
 
@@ -2959,6 +2996,7 @@ input, select, textarea {
 				margin: 0 0 1em 0;
 			}
 
+
 		/* Actions */
 
 			form ul.actions {
@@ -3248,7 +3286,10 @@ input, select, textarea {
 				}
 
 		/*TOP*/
+		.gotop{
 
+
+		}
 
 		.TOP {                /*控制側邊欄進出的按鈕*/
                 position: fixed;
