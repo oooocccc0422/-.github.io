@@ -172,7 +172,7 @@
 									<div class="row">
 										<div class="col-6 col-12-medium">
 											<section>
-												<img src="images/01_工作區域 1.png" alt="">
+												<img src="images/01_工作區域 1.png" alt="" class="img-s">
 												<h3 class="icon img-4"> 憂鬱症</h3>
 												<p>-上班族
 												-不愛講話
@@ -180,9 +180,9 @@
 												</p>
 											</section>
 										</div>
-										<div class="col-6 col-12-medium">
+										<div class="col-6 col-12-medium" >
 											<section>
-												<img src="images/07_工作區域 1.png" alt="">
+												<img src="images/07_工作區域 1.png" alt="" class="img-s">
 												<h3 class="icon solid img-5">暴食症</h3>
 												<p>
 												-老闆CEO
@@ -195,7 +195,7 @@
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<img src="images/02-3_工作區域 1.png" alt="">
+												<img src="images/02-3_工作區域 1.png" alt="" class="img-s">
 												<h3 class="icon img-6">強迫症</h3>
 												<p>
 													-影響到其他人
@@ -211,7 +211,7 @@
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<img src="images/03_工作區域 1.png" alt="">
+												<img src="images/03_工作區域 1.png" alt="" class="img-s">
 												<h3 class="icon solid img-1">過動症</h3>
 												<p>-國中學生
 												-常受傷-也常傷到其他人-麻煩製造機
@@ -224,7 +224,7 @@
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<img src="images/05-5_工作區域 1.png" alt="">
+												<img src="images/05-5_工作區域 1.png" alt="" class="img-s">
 												<h3 class="icon solid img-2">亞斯伯格症</h3>
 												<p>-注重sop
 												-不擅長社交 卻渴望與人互動
@@ -236,7 +236,7 @@
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<img src="images/06-1_工作區域 1.png" alt="">
+												<img src="images/06-1_工作區域 1.png" alt="" class="img-s">
 												<h3 class="icon solid img-3">心裡諮商師</h3>
 												<p>
 												-一般印象中的心理師，個性溫柔的女醫師
@@ -463,10 +463,14 @@
 										</ul>
 									</div>
 
-									<div class="TOP">
-									<p id='wrap'>
-            						<a href="#"><img class="TOP" src="images/caret-up.png" width="52" height="30" style="float: right;"></a>
-            						</div>
+									<a href="#" class="gotop">
+										<img  src="images/caret-up.png" width="52" height="30" style="float: right;">
+    								<!--gotopicon-->
+									</a>
+
+
+            						<!-- <a href="#" class="goTop"><img class="TOP" src="images/caret-up.png" width="52" height="30" style="float: right;"></a>
+            						</div> -->
 
 							</div>
 
@@ -486,5 +490,31 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+			function goTop(e) {
+    		e.preventDefault();
+    		if (e.target.offsetParent.classList.value == 'gotop') {
+      		document.body.scrollTop = 0; // For Safari
+        	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+   			 }
+			}
+			body.addEventListener('click', goTop);
+			$(document).ready(function () {
+    $(window).scroll(function (e) {
+        var scrollY = window.scrollY;
+        if (scrollY < 500) {
+            $('.top-btn').addClass('show');
+        } else{
+            $('.top-btn').removeClass('show');
+        }
+
+    $('.top-btn').click(function(){
+        $('html,body').animate({
+          scrollTop: 0
+        },1000);
+    });
+
+});
+</script>
 	</body>
 </html>
