@@ -40,8 +40,8 @@ a {
     text-decoration:none;
 }
 
-img {
-	margin:0 auto;
+.img-cc {
+	margin:0 -200px;
 	display: block; 
 }
 
